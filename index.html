@@ -111,11 +111,28 @@
             max-height: 200px;
         }
 		.image-trak {
-            max-height: 500px;
+			max-width: 100%;  /* Ensures the image never exceeds its container */
+			height: auto;  /* Maintains the aspect ratio */
+			display: block;  /* Prevents inline spacing issues */
+			margin: 0 auto;  /* Centers the image */
         }
         .image-footer {
             max-height: 80px;
         }
+		.map-container {
+			position: relative;
+			width: 100%; /* Full width of the container */
+			padding-top: 56.25%; /* Aspect ratio 16:9 */
+		}
+
+		.map-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
     </style>
 </head>
 <body>
@@ -162,7 +179,12 @@
 				<h3>Kur?</h3>
 				<p>Vieta - <strong>Keliautojų namai</strong></p>
 				<p>Trakų raj. Kirmėliškių 4, LT-21101</p>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4483.947213864904!2d24.825542827077374!3d54.662663892183076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ddf59e4e43d69f%3A0x37b75563a0e84634!2sKeliautoj%C5%B3%20namai!5e0!3m2!1sen!2slt!4v1743111161044!5m2!1sen!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="map-container">
+					<iframe 
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4483.947213864904!2d24.825542827077374!3d54.662663892183076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ddf59e4e43d69f%3A0x37b75563a0e84634!2sKeliautoj%C5%B3%20namai!5e0!3m2!1sen!2slt!4v1743111161044!5m2!1sen!2slt" 
+						allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
 				<h3>Kaip?</h3>
 				<p>Jums kyla klausimų, kaip atykti į vietą? Neturite...</p>
             </div>
