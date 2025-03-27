@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestuvės</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F3DEBA;
+            color: #0E5E6F;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 1100px;
+            width: 90%;
+            margin: 20px auto;
+            background-color: #F3DEBA;
+            padding: 20px;
+            border-radius: 10px;
+            border: 6px solid #A9907E;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        header {
+            background-color: #D1A586;
+            color: #0E5E6F;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        nav a {
+            color: #0E5E6F;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            color: #A9907E;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        section {
+            padding: 10px;
+            margin: 10px 0;
+        }
+        h2 {
+            color: #0E5E6F;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        .details {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .cta-button {
+            background-color: #0E5E6F;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.1em;
+            text-transform: uppercase;
+        }
+        .cta-button:hover {
+            background-color: #2C8C9B;
+        }
+        footer {
+            background-color: #D1A586;
+            color: #0E5E6F;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            margin-top: 20px;
+        }
+        .image-placeholder {
+            max-height: 100px;
+        }
+        .image-main {
+            max-height: 200px;
+        }
+        .image-footer {
+            max-height: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>JUSTINA IR TOMAS</h1>
+            <nav>
+                <a href="#welcome">Sveikinimas</a>
+                <a href="#date-location">Data ir Vieta</a>
+                <a href="#our-story">Mūsų Istorija</a>
+                <a href="#rsvp">Patvirtinti Dalyvavimą</a>
+            </nav>
+        </header>
+        
+        <img src="img/1742070583679blob.png" class="image-placeholder" align="left">
+
+        <section id="welcome">
+            <h2>Sveiki atvykę į mūsų vestuvių svetainę!</h2>
+            <p>Mieli draugai ir šeima, džiaugiamės galėdami pasidalinti šiuo svarbiu gyvenimo įvykiu su jumis. Čia rasite visą informaciją apie mūsų vestuves, vietą, laiką ir viską, ko reikia norint prisijungti prie mūsų šventės.</p>
+        </section>
+        
+        <img src="img/1742070547811blob.png" class="image-main" align="center">
+    Kada
+	Kur
+	Kaip apsirengti
+	Programa
+        <section id="date-location">
+            <h2>Data ir Vieta</h2>
+            <div class="details">
+                <p><strong>Data:</strong> [Vestuvių Data]</p>
+                <p><strong>Laikas:</strong> [Vestuvių Laikas]</p>
+                <p><strong>Vieta:</strong> [Vestuvių Vieta], [Adresas]</p>
+            </div>
+        </section>
+		
+		<img src="img/1742070096340blob.png" class="image-footer" align="left">
+		<img src="img/1742070142217blob.png" class="image-footer" align="right">
+
+        <section id="our-story">
+            <h2>Mūsų Istorija</h2>
+            <p>Prieš [X] metų susitikome ir sužinojome, kad esame tikri vienas kitam. Mūsų kelias buvo kupinas nuotykių, meilės ir juoko. Dabar esame pasiruošę pradėti naują gyvenimo etapą kaip vyras ir žmona.</p>
+        </section>
+
+        <section id="rsvp">
+            <h2>Patvirtinkite Dalyvavimą</h2>
+            <p>Maloniai kviečiame jus dalyvauti mūsų šventėje. Prašome užpildyti formą ir pranešti, ar galėsite prisijungti.</p>
+            <a href="rsvp.html" class="cta-button">Patvirtinti Dalyvavimą</a>
+        </section>
+
+        <section>
+            <img src="img/1742070583679blob.png" class="image-placeholder" align="right">
+            <img src="img/1742070564341blob.png" class="image-footer" align="center">
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Justina ir Tomas</p>
+        </footer>
+    </div>
+
+</body>
+</html>
