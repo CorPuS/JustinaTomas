@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vestuvės</title>
@@ -107,6 +108,9 @@
         .image-placeholder {
             max-height: 100px;
         }
+		.image-flowers {
+            max-height: 150px;
+        }
         .image-main {
             max-height: 200px;
         }
@@ -124,7 +128,6 @@
 			width: 100%; /* Full width of the container */
 			padding-top: 56.25%; /* Aspect ratio 16:9 */
 		}
-
 		.map-container iframe {
 			position: absolute;
 			top: 0;
@@ -132,6 +135,15 @@
 			width: 100%;
 			height: 100%;
 			border: none;
+		}
+		.back-to-top {
+			text-decoration: none;
+			font-size: 2.5em;
+			color: #0E5E6F; /* Matching site color */
+		}
+
+		.back-to-top:hover {
+			color: #A9907E; /* Hover effect */
 		}
     </style>
 </head>
@@ -155,6 +167,8 @@
             <p>Maloniai kviečiame jus dalyvauti mūsų šventėje. Prašome užpildyti formą ir pranešti, ar galėsite prisijungti.</p>
             <a href="rsvp.html" class="cta-button">Patvirtinti Dalyvavimą</a>
         </section>
+		
+		<img src="img/1742070583679blob.png" class="image-placeholder" align="right">
 
         <section id="welcome">
             <h2>Sveiki atvykę į mūsų vestuvių virtualius namus!</h2>
@@ -165,9 +179,11 @@
 			<img src="img/trak2.png" class="image-trak" align="center">
 		</section>
         
+		<img src="img/1742070449025blob.png" class="image-flowers" align="left">
+		<img src="img/1742070449025blob.png" class="image-flowers" align="right">
 
         <section id="date-location">
-            <h2>Kada? Kur? Kaip?</h2>
+            <a href="#" class="back-to-top"><i class="fas fa-circle-arrow-up"></i></a><h2>Kada? Kur? Kaip?</h2>
             <div class="details">
                 <p><strong>Data ir laikas:</strong>2025-08-30, 16:00</p>
 				<h3>Šventės eiga (preliminariai, gali keistis):</h3>
@@ -194,7 +210,7 @@
 		<img src="img/1742070142217blob.png" class="image-footer" align="right">
 
 		<section id="duk">
-			<h2>D.U.K</h2>
+			<a href="#" class="back-to-top"><i class="fas fa-circle-arrow-up"></i></a><h2>D.U.K</h2>
 			<table style="width: 100%; border-collapse: collapse; text-align: left;">
 				<tr>
 					<td style="padding: 10px; font-weight: bold; text-align: right; width: 40%;">Ar aš turėsiu kur miegoti?</td>
@@ -229,6 +245,7 @@
 					<td style="padding: 10px; text-align: left;">Šventėje vaikams pramogų, atskirų vietų ar specialaus meniu nebus, todėl ne kūdikius/ labai mažus vaikus palikite su kuo nors smagesniu.</td>
 				</tr>
 			</table>
+			<a href="#" class="back-to-top"><i class="fas fa-circle-arrow-up"></i></a>
 		</section>
 
         <section>
